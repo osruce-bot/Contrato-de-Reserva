@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContractGen Pro - Generador de Contratos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+      
+      /* Web font */
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* Print styles to hide UI elements */
+      @media print {
+        body {
+          background: white;
+        }
+        .print\:hidden {
+          display: none !important;
+        }
+        .print\:absolute {
+          position: absolute;
+        }
+        .print\:w-full {
+          width: 100%;
+          max-width: none;
+        }
+        /* Ensure serif font for print */
+        .font-serif {
+          font-family: 'Merriweather', serif;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
